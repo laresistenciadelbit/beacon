@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#3b8567">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ofertas cercanas"
+        android:id="@+id/textView2"
+        android:textColor="#f7e9ff"
+        android:layout_weight="0.72"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:textSize="28dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:id="@+id/ofertas_LV"
+        android:dividerHeight="10dp"
+        android:layout_weight="0.17" />
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#3b8567">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/map"
+        android:src="@drawable/expozoo_small"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:id="@+id/beacon2"
+        android:src="@drawable/n2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/marker_dot"
+        android:layout_toStartOf="@+id/marker_dot"
+        android:layout_marginEnd="53dp" />
+
+    <ImageView
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:id="@+id/beacon1"
+        android:src="@drawable/n1"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/beacon2"
+        android:layout_toEndOf="@+id/dot"
+        android:layout_marginStart="90dp" />
+
+    <ImageView
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:id="@+id/beacon3"
+        android:src="@drawable/n3"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/beacon1" />
+
+    <ImageView
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:id="@+id/beacon4"
+        android:src="@drawable/n4"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/beacon3"
+        android:layout_alignStart="@+id/beacon2" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/dot"
+        android:src="@drawable/dot"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignBottom="@+id/map"
+        android:layout_alignStart="@+id/map" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="beaconsfound"
+        android:id="@+id/beaconsfound"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#8414c4"
+        android:layout_alignEnd="@+id/beacon4"
+        android:layout_above="@+id/dot_position" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dot position"
+        android:id="@+id/dot_position"
+        android:textColor="#a917fc"
+        android:layout_above="@+id/map"
+        android:layout_toEndOf="@+id/texto_leyenda_destino" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/marker_dot"
+        android:src="@drawable/marker_dot"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignBottom="@+id/map"
+        android:layout_alignEnd="@+id/map"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/leyenda_destino"
+        android:src="@drawable/marker_dot"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/map"
+        android:layout_toEndOf="@+id/dot" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/leyenda_dot"
+        android:src="@drawable/dot"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/leyenda_destino"
+        android:layout_alignStart="@+id/leyenda_destino"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usted está aquí"
+        android:id="@+id/texto_leyenda_dot"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/leyenda_dot"
+        android:layout_toEndOf="@+id/leyenda_dot"
+        android:layout_marginStart="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destino"
+        android:id="@+id/texto_leyenda_destino"
+        android:layout_above="@+id/leyenda_dot"
+        android:layout_alignStart="@+id/texto_leyenda_dot"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mapa del evento"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/leyenda_destino"
+        android:layout_alignBottom="@+id/beaconsfound" />
+</RelativeLayout><!-- From: file:/P:/mysync/projects/android/src/beacon/Application/src/main/res/layout/layout_3.xml -->
